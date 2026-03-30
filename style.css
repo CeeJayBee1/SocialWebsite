@@ -49,8 +49,7 @@ img {
 /* --- 4. Hero Section --- */
 
 .hero {
-    background-image: url('images/Website\ header.png');
-    height: 25vh;
+    background-image: url('images/placeholder.png
     background-size: cover;
     background-position: center;
     display: flex;
