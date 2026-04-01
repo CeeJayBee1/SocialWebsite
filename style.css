@@ -23,6 +23,15 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Judson';
+  src: url('./fonts/Judson-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* --- 2. The Special Class (.:3) --- */
 
 /* Note: In CSS, we must escape the colon with a backslash \ 
@@ -44,7 +53,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "Savannah", serif;
+    font-family: "Judson", serif;
     box-sizing: border-box;
 }
 
@@ -56,7 +65,7 @@ img {
 /* --- 4. Hero Section --- */
 
 .hero {
-    background-image: url('images/placeholder.png');
+    background-image: url('images/HeaderSocial.png');
     height: 25vh;
     background-size: cover;
     background-position: center;
@@ -89,7 +98,7 @@ img {
     gap: 6em;
     width: 70%;
     margin: 3em auto;
-    font-family: 'Savannah', serif;
+    font-family: 'Judson', serif;
 }
 
 .topic-card {
@@ -114,7 +123,7 @@ img {
     gap: 200px;
     width: 100%;
     margin: 3em auto;
-    font-family: 'Savannah', serif;
+    font-family: 'Judson', serif;
 }
 
 .about-me-card {
@@ -179,7 +188,7 @@ img {
 }
 
 .footer {
-    font-family: 'Savannah', serif;
+    font-family: 'Judson', serif;
     background-color: rgb(108, 63, 35);
     color: #fcfcfc;
     text-align: right;
