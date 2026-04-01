@@ -32,21 +32,6 @@
   font-display: swap;
 }
 
-/* --- 2. The Special Class (.:3) --- */
-
-/* Note: In CSS, we must escape the colon with a backslash \ 
-   so the browser doesn't think it's a pseudo-selector. */
-.colon-three {
-    font-weight: normal; /* "thin" is not a standard CSS keyword for weight */
-    color: rgb(115, 90, 70);
-    font-size: 2em;
-    padding: 0.1em 3em;
-    background-color: rgb(143, 179, 177);
-    font-family: 'LEVIBRUSH', cursive;
-    color: inherit; /* Adjust color as needed */
-}
-
-/* --- 3. Base Reset & Layout --- */
 
 body,
 html {
@@ -61,8 +46,6 @@ img {
     width: 100%;
     image-rendering: pixelated;
 }
-
-/* --- 4. Hero Section --- */
 
 .hero {
     background-image: url('images/HeaderSocial.png');
@@ -82,10 +65,9 @@ img {
     font-weight: bold;
 }
 
-/* --- 5. Content Sections --- */
 
 .topic-title {
-    font-weight: normal; /* "thin" is not a standard CSS keyword for weight */
+    font-weight: normal; 
     color: rgb(252, 252, 252);
     font-size: 2em;
     padding: 0.1em 3em;
@@ -115,45 +97,7 @@ img {
     text-align: center;
 }
 
-/* --- 6. About Me Section --- */
 
-.about-me-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 200px;
-    width: 100%;
-    margin: 3em auto;
-    font-family: 'Judson', serif;
-}
-
-.about-me-card {
-    background-color: rgb(241, 223, 242);
-    color: black;
-    padding: 1em;
-    border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.about-me-text, .about-me-small-text {
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-
-.about-me-text { font-size: 1.5em; }
-.about-me-small-text { font-size: 0.8em; }
-
-.about-me-tiny-text {
-    font-size: 0.005em; /* Extremely small - likely invisible to most users */
-    margin-bottom: 0.5em;
-    text-align: center;
-    display: block;
-    width: 100%;
-    line-height: 1.2;
-}
-
-/* --- 7. Navigation & UI Components --- */
 
 .sidenav {
     height: 100%;
@@ -162,7 +106,7 @@ img {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #6c3f23;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -195,7 +139,6 @@ img {
     padding: 3em 3em;
 }
 
-/* Hamburger Icon */
 .container {
     position: absolute;
     top: 20px;
@@ -208,7 +151,7 @@ img {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #fcfcfc;
     margin: 6px 0;
     transition: 0.4s;
 }
