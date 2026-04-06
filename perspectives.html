@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>My Showcase Website</title>
+</head>
+<body>
+<div class="container" onclick="toggleNav(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function toggleNav(x) {
+  const sidenav = document.getElementById("mySidenav");
+  if (sidenav.style.width === "250px") {
+    sidenav.style.width = "0";
+  } else {
+    sidenav.style.width = "250px";
+  }
+  x.classList.toggle("change");
+}
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html">Our Problem</a>
+  <a href="perspectives.html">Perspectives</a>
+  <a href="programming.html">placeholder</a>
+  <a href="about-me.html">placeholder</a>
+  <a href="colon3.html">placeholder</a>
+</div>
+
+    <section class="hero">
+        <div class="hero-text"></div>
+    </section>
+
+    <section class="topic">
+        <div class="topic-title">
+            <h1>Perspectives about Rhino Poaching</h1>
+        </div>
+        <div class="perspectives-content">
+            <div class="perspectives-card">
+                <b class="perspectives-card-text"><br><br>Who are the groups involved in this issue?</b>
+            </div>
+            <div class="perspectives-card">
+                <p class="perspectives-card-text">The poachers<br>Doctors who use it for medicine<br>The people who buy them on the black market</p>
+            </div>
+            <div class="perspectives-card">
+                <b class="perspectives-card-text"><br><br><br>Are there conflicts/arguments and disagreements about the issue?</b>
+            </div>
+            <div class="perspectives-card">
+                <p class="perspectives-card-text">There are big disagreements because some of the natives feel that the white people just strolled in, fenced in the rhinos they were able to hunt, and made laws against it. This makes some of the indigenous people disapprove of the laws and try to break them.</p>
+            </div>
+            <div class="perspectives-card">
+                <b class="perspectives-card-text"><br><br>Explain people's differing viewpoints on the issue</b>
+            </div>
+            <div class="perspectives-card">
+                <p class="perspectives-card-text">Some people don't want to stop hunting/poaching animals like rhinos as they give medicine from their horns, and others don't want to kill them and just harvest the horns.</p>
+            </div>
+            <div class="perspectives-card">
+                <b class="perspectives-card-text"><br><br>Do some groups of people get impacted by the issue more than others? Explain why.</b>
+            </div>
+            <div class="perspectives-card">
+                <p class="perspectives-card-text">Yes, some groups of people will get impacted by this issue because if they are hunters and they can't hunt anymore or if they don't hunt but people are still out there hunting/poaching.</p>
+            </div>
+            <div class="perspectives-card">
+                <b class="perspectives-card-text"><br><br><br>Have there been some solutions in the past that have failed or succeeded by different groups or individuals?</b>
+            </div>
+            <div class="perspectives-card">
+                <p class="perspectives-card-text">Pembient, which is a US-biotechnology start-up that aimed to act as "the De Beers of synthetic wildlife products." They tried to manufacture and sell 3D printed rhino horn with the aim of a cheaper alternative and to reduce the incentive to hunt live animals, but this whole thing failed to go mainstream, with some saying it may hurt the animals more. </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Social Science Website by Caleb Brown and Bailey Craig</p>
+    </footer>
+
+</body>
+</html>

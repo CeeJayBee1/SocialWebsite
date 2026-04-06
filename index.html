@@ -4,85 +4,75 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Showcase Website</title>
 </head>
-<!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
 <body>
-<div class="container" onclick="openNav()">
+<div class="container" onclick="toggleNav(this)">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
 </div>
 
 <script>
-
-
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+function toggleNav(x) {
+  const sidenav = document.getElementById("mySidenav");
+  if (sidenav.style.width === "250px") {
+    sidenav.style.width = "0";
+  } else {
+    sidenav.style.width = "250px";
+  }
+  x.classList.toggle("change");
 }
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
 </script>
 
-
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">placeholder</a>
-  <a href="computer-science.html">placeholder</a>
+  <a href="index.html">Our Problem</a>
+  <a href="perspectives.html">Perspectives</a>
   <a href="programming.html">placeholder</a>
   <a href="about-me.html">placeholder</a>
   <a href="colon3.html">placeholder</a>
 </div>
 
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()"></span>
-
-    <!-- The Hero Section -------------------------------------------------------------------------------------- -->
     <section class="hero">
         <div class="hero-text"></div>
     </section>
 
-<!-- Topic one ------------------------------------------------------------------------------------------------- -->
-    <!-- The First Topic Section -->
     <section class="topic">
-        <!-- the topic title a big bar with text in it -->
         <div class="topic-title">
             <h1>Our Problem</h1>
         </div>
-        <!-- now a three column grid of images -->
-        <div class="topic-content">
-            <!-- one "card" which includes an image with a text below it -->
+        <div class="problem-content">
+            <div class="problem-card">
+                <img src="images/white_rhino.jpg" alt="Description">
+                <p> <br> Our problem is how to reduce the number of animals, such as rhinos, being killed and poached. Well, the reason people are hunting and poaching rhinos is mainly for their horns. This is because the horns are worth about $92,500 per kilo, which is actually worth more gram for gram than gold and diamonds. "Many years ago, there weren't fences, and then white people came and put up fences. Now they own the animals, and black people feel like their access to the wild has been taken away," he says. "So they don't respect it. This makes them feel robbed and makes people start hunting the rhinos, which is what causes poaching. <br>
+                <span>Why is this not sustainable?</span><br>This problem is not sustainable because it cannot continue to happen, as the longer this goes on, the more species go extinct. This is because often the rhinos don't survive having their horns taken off, and they could get overhunted for these. This could be a major problem, as if the rhinos go extinct, a lot of families could end up suffering an immense loss of money.  Then they could even go so low as to steal from each other just so they could live. This is not sustainable in any way, be it economic, social, or environmental.
+            </p>
+        </div>
+        <div class="problem-content">
+            <div class="problem-card">
+                <p><span>Where is it?</span><br> It seems to be mostly in South Africa and the surrounding countries. Most hunting occurs in the Kruger National Park. This could be because the rangers are more focused on the tourists looking around the park for poachers. It is also home to most of the world's rhinos, which could make it more attractive to target.<br> 
+                </p>
+                <img src="images/map.png" alt="Description">
+            </div>
+        </div>
+        <div class ="topic-content">
             <div class="topic-card">
-                <img src="images/placeholder.png" alt="placeholder">
-                <h2 class="topic-card-text">placeholder</h2>
+                <p><span>Social Impacts</span> <br>If there are no rhinos, the rhino horns won't be available to harvest to be used as medicine.</p>
             </div>
             <div class="topic-card">
-                <img src="images/placeholder.png" alt="placeholder">
-                <h2 class="topic-card-text">placeholder</h2>
+                <p><span>Economic Impacts</span><br> People get money from the rhino poaching
+</p>
             </div>
             <div class="topic-card">
-                <img src="images/placeholder.png" alt="placeholder">
-                <h2 class="topic-card-text">placeholder</h2>
+                <p><span>Environmental Impacts</span> <br>Extinction<br>Animal endangerment</p>
             </div>
         </div>
     </section>
-<!-- End of topic one------------------------------------------------------------------------------------------ -->
 
-<!-- Copy and paste the section from above to make your next section -->
-
-
-
-    <!-- A Simple Website Footer ------------------------------------------------------------------------------ -->
     <footer class="footer">
         <p>&copy; 2026 Social Science Website by Caleb Brown and Bailey Craig</p>
     </footer>
 
-<!-- The end of the whole page- no more content after this! -->
 </body>
 </html>
