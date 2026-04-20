@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>My Showcase Website</title>
+</head>
+<body>
+<div class="container" onclick="toggleNav(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function toggleNav(x) {
+  const sidenav = document.getElementById("mySidenav");
+  if (sidenav.style.width === "250px") {
+    sidenav.style.width = "0";
+  } else {
+    sidenav.style.width = "250px";
+  }
+  x.classList.toggle("change");
+}
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html">Our Problem</a>
+  <a href="perspectives.html">Perspectives</a>
+  <a href="solution.html">Our Solution</a>
+  <a href="consequences.html">Consequences</a>
+  <a href="bibliography.html">Bibliography</a>
+</div>
+
+    <section class="hero">
+        <div class="hero-text"></div>
+    </section>
+
+    <section class="topic">
+        <div class="topic-title">
+            <h1>Consequences</h1>
+        </div>
+        <div class="perspectives-content">
+            <div class="perspectives-card">
+
+                <p><br><br><br><br><span>Positive Consequences</span>
+            </p>
+            </div>
+            <div class="perspectives-card">
+                <p>The rhino trade would be reduced because there would be less demand for it. This could make the relationship a bit better between the indigenous people and the white people, as they would no longer be breaking into the reserves to hunt the rhinos. This will help save a lot of people's money and create many new jobs in the production of the new material. It could also slow down the black market.  This will bring the rhinos back from the brink of extinction and will reduce the number of poachers altogether. This can also help the other species there because they would no longer have as many people with guns where they live, and they might be less scared.
+            </p>
+            </div>
+        </div>
+         <div class="perspectives-content">
+            <div class="perspectives-card">
+
+                <p><br><br><span>Negative Consequences</span>
+            </p>
+            </div>
+            <div class="perspectives-card">
+                <p>Some people could lose a lot of money, and maybe even starve. This would eventually stop because people would eventually stop relying on poaching for money. Some people could become less trusting of the myths, maybe once they hear that it is made with the same stuff as rhino horns, and maybe finally realise that there is no medicinal upside to using it. 
+
+            </p>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Social Science Website by Caleb Brown and Bailey Craig</p>
+    </footer>
+
+</body>
+</html>

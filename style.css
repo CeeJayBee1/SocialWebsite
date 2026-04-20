@@ -54,7 +54,11 @@ b {
     text-align: center;
     font-weight: bold;
 }
-
+a {                
+  display: block; 
+  margin-bottom: 5px;
+  color: rgb(252, 252, 252);
+}
 .hero {
     background-image: url('images/HeaderSocial.png');
     height: 25vh;
@@ -97,6 +101,8 @@ b {
     width: 70%;
     margin: 3em auto;
     font-family: 'Judson', serif;
+    align-items: center; /* Vertically centers children */
+  justify-content: center;
     
 }
 .problem-card {
@@ -112,6 +118,34 @@ b {
 }
 
 .problem-card-text {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+
+}
+.bib-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6em;
+    width: 70%;
+    margin: 3em auto;
+    font-family: 'Judson', serif;
+    
+}
+.bib-card {
+    background-color: #dc7c47;
+    color: black;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    gap: 20px;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.bib-card-text {
     font-size: 1.5em;
     margin-bottom: 0.5em;
     text-align: center;

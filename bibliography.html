@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>My Showcase Website</title>
+</head>
+<body>
+<div class="container" onclick="toggleNav(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function toggleNav(x) {
+  const sidenav = document.getElementById("mySidenav");
+  if (sidenav.style.width === "250px") {
+    sidenav.style.width = "0";
+  } else {
+    sidenav.style.width = "250px";
+  }
+  x.classList.toggle("change");
+}
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html">Our Problem</a>
+  <a href="perspectives.html">Perspectives</a>
+  <a href="solution.html">Our Solution</a>
+  <a href="consequences.html">Consequences</a>
+  <a href="bibliography.html">Bibliography</a>
+</div>
+
+    <section class="hero">
+        <div class="hero-text"></div>
+    </section>
+
+    <section class="topic">
+        <div class="topic-title">
+            <h1>Bibliography</h1>
+        </div>
+        <div class="bib-content">
+            <div class="bib-card">
+            <a href="https://oxpeckers.org/poach-tracker-map/" target="_blank">Rhino Poaching Map</a><br>
+            <a href="https://www.bbc.com/news/magazine-32151983" target="_blank">BBC article</a><br>
+            <a href="https://www.savetherhino.org/our-work/protecting-rhinos/what-is-rhino-horn-made-of/" target="_blank">Save The Rhino Picture and Article</a><br>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8052392/#:~:text=Introduction,self%2Dassemble%20and%20form%20polymers" target="_blank">Chemical makeup information</a><br>
+            <a href="https://www.wwf.org.uk/learn/wildlife/african-rhinos" target="_blank">Rhino Image</a> <br>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Social Science Website by Caleb Brown and Bailey Craig</p>
+    </footer>
+
+</body>
+</html>

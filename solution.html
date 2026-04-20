@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>My Showcase Website</title>
+</head>
+<body>
+<div class="container" onclick="toggleNav(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function toggleNav(x) {
+  const sidenav = document.getElementById("mySidenav");
+  if (sidenav.style.width === "250px") {
+    sidenav.style.width = "0";
+  } else {
+    sidenav.style.width = "250px";
+  }
+  x.classList.toggle("change");
+}
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="index.html">Our Problem</a>
+  <a href="perspectives.html">Perspectives</a>
+  <a href="solution.html">Our Solution</a>
+  <a href="Consequences.html">Consequences</a>
+  <a href="bibliography.html">Bibliography</a>
+</div>
+
+    <section class="hero">
+        <div class="hero-text"></div>
+    </section>
+
+    <section class="topic">
+        <div class="topic-title">
+            <h1>Our Solution</h1>
+        </div>
+        <div class="problem-content">
+            <div class="problem-card">
+
+                <p><br>Our solution is to make a synthetic material to mimic the rhino horns. In the long term, it would make people lose trust in the market because it could be synthetic, or the synthetic could be cheaper than the real one. This could reduce the amount of demand in the rhino trade because people wouldn't know if they could trust the suppliers, or it could make it so people buy the synthetic stuff because it is almost the same, and they would sleep easier knowing it is gotten ethically. The material used is keratin, and it is extracted from hair, nails, feathers, horns, hooves and beaks. We could collect dead skin cells to help with the collection from dead rhinos, calcium from science shops and melanin from seeds and cuttlefish ink. When we combine these materials together, we could make a synthetic material very similar to rhino horns themselves.
+<br>
+
+            </p>
+            <img src="images/RhinoHornPic.png" alt="Rhino Horn Picture">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Social Science Website by Caleb Brown and Bailey Craig</p>
+    </footer>
+
+</body>
+</html>
